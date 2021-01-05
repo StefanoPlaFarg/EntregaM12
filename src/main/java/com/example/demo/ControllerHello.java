@@ -17,7 +17,13 @@ import org.springframework.ui.Model;
 @Controller
 public class ControllerHello {
 	
-	 @GetMapping("/hello")
+	 /**
+	  * Metode que mapeja l'endpoint /hello des d' index.html (carpeta static) i retorna al navegador l'arxiu hello.html (carpeta templates)
+	  * 
+	 * @param model
+	 * @return  hello.html
+	 */
+	@GetMapping("/hello")
 	 //@ResponseBody
 	    String hello(Model model) {
 	        return "hello";
