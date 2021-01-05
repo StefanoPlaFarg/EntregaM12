@@ -23,6 +23,7 @@ public class ControllerHello {
 	 * @param model
 	 * @return  hello.html
 	 */
+	
 	@GetMapping("/hello")
 	 //@ResponseBody
 	    String hello(Model model) {
