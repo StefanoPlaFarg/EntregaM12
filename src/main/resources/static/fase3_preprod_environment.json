@@ -1,0 +1,14 @@
+{
+	"id": "a8807df4-0492-44e9-b0ed-c592b0da8e07",
+	"name": "preproduccio",
+	"values": [
+		{
+			"key": "IP",
+			"value": "pre.domain.com",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-01-06T11:12:00.038Z",
+	"_postman_exported_using": "Postman/7.36.1"
+}

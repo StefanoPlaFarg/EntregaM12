@@ -5,6 +5,7 @@ package com.example.demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
@@ -24,11 +25,13 @@ public class ControllerHello {
 	 * @return  hello.html
 	 */
 	
-	@GetMapping("/hello")
-	 //@ResponseBody
-	    String hello(Model model) {
-	        return "hello";
-	 }
+		@GetMapping("/hello/{name}")
+		// @ResponseBody
+		String hello(@PathVariable("name") String name, Model model) {
+
+			model.addAttribute("name", name);
+			return "hello";
+		}
 }
 
 

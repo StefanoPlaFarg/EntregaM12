@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "a930a5d5-2ba2-4f13-8877-1c0b4952a954",
+		"name": "EntregaM12",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fase1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fase3_LocalRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{IP}}:{{port}}/",
+					"protocol": "http",
+					"host": [
+						"{{IP}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fase3_DevRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{IP}}",
+					"protocol": "http",
+					"host": [
+						"{{IP}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fase3_PreproductionRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{IP}}",
+					"protocol": "http",
+					"host": [
+						"{{IP}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
